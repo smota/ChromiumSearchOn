@@ -30,8 +30,6 @@ if (searchOn) {
 
             SEARCH_ENGINES.every( (se)=> {
                 qPos = tab.url.indexOf(se.url);
-
-                alert(se.name);
                 
                 if(qPos != -1) {
                     qTermPos = tab.url.indexOf("&", tab.url.indexOf(se.searchField));
